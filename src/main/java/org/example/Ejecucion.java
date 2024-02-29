@@ -22,10 +22,10 @@ public class Ejecucion {
 
         System.out.print("Ingrese el porcentaje de lluvias inicial: ");
         validarNumero(sc);
-        int porcentajeInicial = sc.nextInt();
+        int porcentajeDiasLluvia = sc.nextInt();
 
-        validarPorcentajeDeLluvias(porcentajeInicial);
-        Clima.calcularClima(tempIni, porcentajeInicial, numDias);
+        validarPorcentajeDeLluvias(porcentajeDiasLluvia);
+        Clima.calcularClima(tempIni, porcentajeDiasLluvia, numDias);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
